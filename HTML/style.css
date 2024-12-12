@@ -1,0 +1,112 @@
+/*-------------------General-------------------*/
+
+body{
+    margin:0;
+}
+
+a{
+    text-decoration: none
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+fieldset{
+    border: 0;
+}
+
+/*---------------- Header ---------------*/
+.cabecera{
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__logo{
+    width: 10rem;
+
+}
+.cabecera_menu{
+    margin-right: 2rem;
+}
+.cabecera_menu_lista{
+    display: flex;
+
+}
+.cabecera__menu__list__enlace{
+    margin: 1.5rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.cabecera__menu__list__enlace:hover{
+    color:yellowgreen;
+}
+/* -------------------- Main ------------------*/
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal__titulo{
+    width: 100%;
+    text-align: center;
+    margin:2rem;
+}
+
+.principal__seccimg{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left:2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.principal__seccimg__art{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.principal__seccimg__art__img{
+    border-radius: 1.5rem;
+}
+
+.principal__seccimg__art__div{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal__seccimg__art__div__text{
+    width: 60%;
+    font-weight: bold;
+}
+
+.principal__viajes{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+   
+/*----------------- Footer ------------*/
+
+
+
+
+
+
+
+

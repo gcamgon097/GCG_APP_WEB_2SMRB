@@ -1,0 +1,56 @@
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre  </label>
+        <input id="nombre" type="text"><br>
+
+        <label for="apellidos">Apellidos  </label>
+        <input id="apellidos" type="text"><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="sexo">Sexo: </label>
+        <select id="sexo">
+            <!--Etiqueta option-->
+            <option value="value1">Hombre</option> 
+            <option value="value2" selected>Mujer</option>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Información de Contacto</legend>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br>
+
+        <label for="telefono">Indica tu teléfono:</label>
+        <input type="tel" id="telefono"><br>
+
+        <label for="direccion">Dirección de casa  </label>
+        <input id="direccion"><Direccion type="text"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Información de Cuenta</legend>
+        <label for="Nombre de Usuario">Nombre de Usuario  </label>
+        <input id="Nombre de Usuario" type="text"><br>
+
+        <label for="telefono">Indica tu teléfono:</label>
+        <input type="tel" id="telefono"><br>
+
+        <label for="direccion">Dirección de casa  </label>
+        <input id="direccion"><Direccion type="text"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <label for="Nombre de Usuario">Nombre de Usuario  </label>
+        <input id="Nombre de Usuario" type="text"><br>
+
+        <label for="telefono">Indica tu teléfono:</label>
+        <input type="tel" id="telefono"><br>
+
+        <label for="direccion">Dirección de casa  </label>
+        <input id="direccion"><Direccion type="text"><br>
+    </fieldset>
+</form>
+
+<form action="/submit" method="POST">
+    <input type="submit" value="Enviar">
