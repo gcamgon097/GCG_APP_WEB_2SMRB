@@ -1,0 +1,46 @@
+        /* General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    width: 20%; /* El encabezado ocupa el 20% del ancho total */
+    padding: 10px;
+}
+
+.cabecera__logo {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.cabecera__logo img {
+    width: 150px; /* Ajustamos el tamaño de la imagen */
+    height: auto;
+}
+
+.cabecera__nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.cabecera__nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cabecera__nav a:hover {
+    color: #FFD700; /* Efecto al pasar el ratón */
+}
