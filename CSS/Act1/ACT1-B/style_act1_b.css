@@ -1,0 +1,48 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    background-color: black;
+    height: 200px; /* Altura del encabezado */
+    position: relative;
+}
+
+.cabecera__logo img {
+    width: 300px; /* Tamaño de la imagen */
+    height: auto;
+}
+
+.cabecera__nav {
+    background-color: #666;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabecera__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cabecera__nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cabecera__nav a:hover {
+    color: #FFD700; /* Color al pasar el ratón */
+}
