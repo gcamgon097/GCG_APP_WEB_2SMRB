@@ -1,56 +1,74 @@
-<form>
-    <fieldset>
-        <legend>Datos personales</legend>
-        <label for="nombre">Nombre  </label>
-        <input id="nombre" type="text"><br>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
 
-        <label for="apellidos">Apellidos  </label>
-        <input id="apellidos" type="text"><br>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" required><br>
 
-        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" name="apellidos" type="text" required><br>
 
-        <label for="sexo">Sexo: </label>
-        <select id="sexo">
-            <!--Etiqueta option-->
-            <option value="value1">Hombre</option> 
-            <option value="value2" selected>Mujer</option>
-        </select><br><br>
-    </fieldset>
-    <fieldset>
-        <legend>Información de Contacto</legend>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
 
-        <label for="telefono">Indica tu teléfono:</label>
-        <input type="tel" id="telefono"><br>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="hombre">Hombre</option> 
+                <option value="mujer" selected>Mujer</option>
+                <option value="otro">Otro</option>
+            </select><br>
+        </fieldset>
 
-        <label for="direccion">Dirección de casa  </label>
-        <input id="direccion"><Direccion type="text"><br>
-    </fieldset>
-    <fieldset>
-        <legend>Información de Cuenta</legend>
-        <label for="Nombre de Usuario">Nombre de Usuario  </label>
-        <input id="Nombre de Usuario" type="text"><br>
+        <fieldset>
+            <legend>Información de Contacto</legend>
 
-        <label for="telefono">Indica tu teléfono:</label>
-        <input type="tel" id="telefono"><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br>
 
-        <label for="direccion">Dirección de casa  </label>
-        <input id="direccion"><Direccion type="text"><br>
-    </fieldset>
-    <fieldset>
-        <legend>Preferencias</legend>
-        <label for="Nombre de Usuario">Nombre de Usuario  </label>
-        <input id="Nombre de Usuario" type="text"><br>
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
 
-        <label for="telefono">Indica tu teléfono:</label>
-        <input type="tel" id="telefono"><br>
+            <label for="direccion">Dirección de casa:</label>
+            <textarea id="direccion" name="direccion" rows="4"></textarea><br>
+        </fieldset>
 
-        <label for="direccion">Dirección de casa  </label>
-        <input id="direccion"><Direccion type="text"><br>
-    </fieldset>
-</form>
+        <fieldset>
+            <legend>Información de Cuenta</legend>
 
-<form action="/submit" method="POST">
-    <input type="submit" value="Enviar">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input id="usuario" name="usuario" type="text" required><br>
+
+            <label for="Contraseña">Contraseña:</label>
+            <input id="Contraseña" name="password" type="password" required><br>
+
+            <label for="Confirmación de Contraseña">Confirmación de Contraseña:</label>
+            <input id="Confirmación de Contraseña" name="confirm_password" type="password" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <label for="color">Seleccionar un Color Favorito:</label>
+            <select id="color" name="color">
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+            </select><br>
+
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los Términos y Condiciones</label><br>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
